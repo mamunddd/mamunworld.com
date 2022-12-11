@@ -4,41 +4,43 @@ window.onload = function () {
 
 // main function and all connected here
 function main() {
-  // select darkLightCheckChecked
-  const darkLightCheckChecked = document.getElementById(
-    "darkLightCheckChecked"
-  );
+  // select all elements
+  const lightSwitch = document.getElementById("lightSwitch");
 
-  // toggle darkLightCheckChecked
-  darkLightCheckChecked.addEventListener(
-    "click",
-    handleDarkLightToggle(darkLightCheckChecked)
-  );
+  // handle and connect all elements
+  lightSwitch.addEventListener("click", handleLightSwitch(logoForDark));
+  if (localStorage.getItem("lightSwitch") === "dark") {
+    logoForDark(true);
+  } else {
+    logoForDark(false);
+  }
 }
 
-// handle darkLightCheckChecked function
-function handleDarkLightToggle() {
+/**
+ *
+ * Handle and check dark or light mode
+ *
+ */
+function handleLightSwitch() {
   return function (e) {
-    // console.log(e.target.checked);
     const isDark = e.target.checked;
-    headerArea(isDark);
+    logoForDark(isDark);
   };
 }
 
-function headerArea(isDark) {
-  // select nav tag
-  const nav = document.querySelector("header nav");
-  // select logo
-  const logo = document.querySelector("header nav #logo");
+/**
+ * logo change for dark mode
+ */
+function logoForDark(isDark) {
+  const logo = document.querySelectorAll(".logo_wite_mode");
 
-  
   if (isDark) {
-    nav.classList.remove("navbar-light", "bg-light");
-    nav.classList.add("navbar-dark", "bg-dark");
-    logo.src = "./assets/images/logo-for-dark-mode.svg";
+    logo.forEach((item) => {
+      item.src = "./assets/images/logo-for-dark-mode.svg";
+    });
   } else {
-    nav.classList.add("navbar-light", "bg-light");
-    nav.classList.remove("navbar-dark", "bg-dark");
-    logo.src = "./assets/images/logo-for-white-mode.svg";
+    logo.forEach((item) => {
+      item.src = "./assets/images/logo-for-white-mode.svg";
+    });
   }
 }
