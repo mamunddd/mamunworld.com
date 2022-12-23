@@ -1,2 +1,22 @@
 // reset file import
 @import "./base/reset", "./base/typography";
+
+// my_resume section-> skill bar
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  span {
+    color: #666;
+  }
+}
+.progress {
+  height: 8px;
+}
+.progress-bar {
+  background: -webkit-linear-gradient(
+    left,
+    #ff014f 0%,
+    #ffa6c1 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+}
