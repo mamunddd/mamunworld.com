@@ -1,720 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- bootstrap5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- main styles -->
-    <link rel="stylesheet" href="./assets/sass/style.css" />
-    <title>MamunWorld Portfolio</title>
-  </head>
-  <body>
-    <!-- start header area -->
-    <header>
-      <!-- start navbar -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"
-            ><img
-              src="./assets/images/logo-for-white-mode.svg"
-              alt="logo"
-              width="120"
-              id="logo"
-              class="logo_wite_mode"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#my_resume">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contracts</a>
-              </li>
-            </ul>
-            <div class="d-flex form-check form-switch">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="lightSwitch"
-              />
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- end navbar -->
-      <!-- start hero section -->
-      <div class="container">
-        <div class="row my-5 p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
-          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 mb-lg-0 mb-md-5">
-            <div class="mb-3">
-              <h2 class="fw-bold display-4">Hi, I'm</h2>
-              <p class="fw-bold display-5">Abdullah Al Mamun</p>
-              <p class="display-6">
-                Oracle APEX Developer | SQL & PL/SQL Programmer | Database Application Specialist.&nbsp;
-              </p>
-            </div>
-            <div class="mb-5">
-              <p class="lead">
-               I build modern and scalable web applications using Oracle APEX, SQL, PL/SQL, and Oracle Database.
-          I specialize in form automation, workflows, dashboards, authentication, authorization, and database-driven systems..
-              </p>
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a
-                class="btn btn-outline-secondary px-4 fs-3"
-                href="https://www.facebook.com/Mamunjnu6"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a
-                class="btn btn-outline-secondary px-4 fs-3"
-                href="https://github.com/mamunddd"
-              >
-                <i class="fa-brands fa fa-github"></i
-              ></a>
-              <a
-                class="btn btn-outline-secondary px-4 fs-3"
-                href="https://www.linkedin.com/in/mamunjnu6/"
-              >
-                <i class="fa-brands fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <div class="text-center">
-              <img
-                class="rounded-start"
-                src="./assets/images/mamun-world-hero-section-profile.png"
-                alt="Photo by Diego PH"
-                width="400"
-              />
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MamunWorld Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="./assets/sass/style.css" />
+</head>
+
+<body>
+  <!-- Header Area -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="./assets/images/logo-for-white-mode.svg" alt="logo" width="120" id="logo" class="logo_wite_mode" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#my_resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="d-flex form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="lightSwitch" />
           </div>
         </div>
       </div>
-      <!-- end hero section -->
-    </header>
-    <!-- end header area -->
+    </nav>
 
-    <!-- portfolio section start -->
-    <section id="portfolio" class="py-md-5">
-      <div class="container">
-        <h2 class="text-center pb-5 fw-bold display-5">My Portfolio</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-            <a
-              href="http://orasoft.oracleapexservices.com/apex/r/orasoft61/pos179/login_desktop"
-              target="_blank"
-              ><div class="card shadow">
-                <img
-                  src="./assets/images/erp.png"
-                  class="card-img-top"
-                  alt="portfolio image"
-                />
-                <div class="card-footer">
-                  <p class="card-text text-dark">Business Solutions (ERP).</p>
-                </div>
-              </div></a
-            >
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-            <a
-              href="https://apex.oracle.com/pls/apex/mamunddd/r/onlinebloodbank/home"
-              target="_blank"
-              ><div class="card shadow">
-                <img
-                  src="./assets/images/BloodBank.png"
-                  class="card-img-top"
-                  alt="portfolio image"
-                />
-                <div class="card-footer">
-                  <p class="card-text text-dark">
-                    Online Blacd Bank Management System.
-                  </p>
-                </div>
-              </div></a
-            >
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-            <a
-              href="http://orasoft.oracleapexservices.com/apex/f?p=135:LOGIN_DESKTOP"
-              target="_blank"
-              ><div class="card shadow">
-                <img
-                  src="./assets/images/POS.png"
-                  class="card-img-top"
-                  alt="portfolio image"
-                />
-                <div class="card-footer">
-                  <p class="card-text text-dark">Ora POS (Point Of Sales).</p>
-                </div>
-              </div></a
-            >
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-            <a
-              href="http://orasoft.oracleapexservices.com/apex/r/orasoft62/survey/login"
-              target="_blank"
-              ><div class="card shadow">
-                <img
-                  src="./assets/images/Survey.png"
-                  class="card-img-top"
-                  alt="portfolio image"
-                />
-                <div class="card-footer">
-                  <p class="card-text text-dark">
-                    Online Survey Management System.
-                  </p>
-                </div>
-              </div></a
-            >
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-            <a href="https://apps.starporcelainbd.com/" target="_blank"
-              ><div class="card shadow">
-                <img
-                  src="./assets/images/spl.png"
-                  class="card-img-top"
-                  alt="portfolio image"
-                />
-                <div class="card-footer">
-                  <p class="card-text text-dark">
-                    Some Project's Landing Page.
-                  </p>
-                </div>
-              </div></a
-            >
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-            <a
-              href="https://apex.oracle.com/pls/apex/r/mamunworld/book3129128/home"
-              target="_blank"
-              ><div class="card shadow">
-                <img
-                  src="./assets/images/book.png"
-                  class="card-img-top"
-                  alt="portfolio image"
-                />
-                <div class="card-footer">
-                  <p class="card-text text-dark">
-                    Book Library Management System.
-                  </p>
-                </div>
-              </div></a
-            >
-          </div>
-          <p>
-            Description: I have built this project with the Frontend: Oracle
-            Application Express (APEX) & Backend: Oracle Database 19c. I
-            maintained all standard procedure that required for developing a
-            standard Software. For login credentials please Contact with me at
-            mail : mamunddd44@gmail.com
+    <!-- Hero Section -->
+    <div class="container">
+      <div class="row my-5 p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 mb-lg-0 mb-md-5">
+          <h2 class="fw-bold display-4">Hi, I'm</h2>
+          <p class="fw-bold display-5">Abdullah Al Mamun</p>
+          <p class="display-6">
+            Oracle APEX Developer | SQL & PL/SQL Programmer | Database Application Specialist
           </p>
+          <p class="lead mb-5">
+            I build modern and scalable web applications using Oracle APEX, SQL, PL/SQL, and Oracle Database. I specialize in form automation, workflows, dashboards, authentication, authorization, and database-driven systems.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a class="btn btn-outline-secondary px-4 fs-3" href="https://www.facebook.com/Mamunjnu6"><i class="fa-brands fa-facebook"></i></a>
+            <a class="btn btn-outline-secondary px-4 fs-3" href="https://github.com/mamunddd"><i class="fa-brands fa-github"></i></a>
+            <a class="btn btn-outline-secondary px-4 fs-3" href="https://www.linkedin.com/in/mamunjnu6/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg text-center">
+          <img class="rounded-start" src="./assets/images/mamun-world-hero-section-profile.png" alt="Profile Photo" width="400" />
         </div>
       </div>
-    </section>
-    <!-- portfolio section end -->
+    </div>
+  </header>
 
-    <!-- my_resume section start -->
-    <section id="my_resume" class="py-md-5">
-      <div class="container">
-        <h2 class="text-center pb-5 fw-bold display-5">My Resume</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <h2
-              class="text-center shadow py-3 fw-bold resume_btn"
-              role="button"
-            >
-              Professional Skills
-            </h2>
-          </div>
-          <div class="col-md-4">
-            <h2
-              class="text-center shadow py-3 fw-bold resume_btn"
-              role="button"
-            >
-              Experiences
-            </h2>
-          </div>
-          <div class="col-md-4">
-            <h2
-              class="text-center shadow py-3 fw-bold resume_btn"
-              role="button"
-            >
-              Education
-            </h2>
-          </div>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-md-5">
+    <div class="container">
+      <h2 class="text-center pb-5 fw-bold display-5">My Portfolio</h2>
+      <div class="row">
+        <!-- Portfolio Card Example -->
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <a href="http://orasoft.oracleapexservices.com/apex/r/orasoft61/pos179/login_desktop" target="_blank">
+            <div class="card shadow">
+              <img src="./assets/images/erp.png" class="card-img-top" alt="Business Solutions ERP" />
+              <div class="card-footer">
+                <p class="card-text text-dark">Business Solutions (ERP)</p>
+              </div>
+            </div>
+          </a>
         </div>
-        <!-- show resume -->
-        <div id="resume_show">
-          <!-- skill start -->
-          <div class="row mt-3">
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Frontend Skill</h3>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>HTML5</span>
-                    <span>95%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 95%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>CSS</span>
-                    <span>80%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 80%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>Bootstrap5</span>
-                    <span>85%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 85%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>JavaScript</span>
-                    <span>75%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 75%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>WordPress</span>
-                    <span>95%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 95%"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Backend Skill</h3>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>SQL</span>
-                    <span>95%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 95%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>Mysql</span>
-                    <span>90%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 90%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>PLSQL</span>
-                    <span>85%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 85%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>SQL Server</span>
-                    <span>85%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 85%"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="labels">
-                    <span>C</span>
-                    <span>60%</span>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 60%"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- skill end -->
 
-          <!-- experiences start -->
-          <div class="row mt-3 d-none">
-            <div class="col-md-12">
-              <div class="shadow p-5">
-                <h3> Assistant Manager, IC&T</h3>
-                <p>
-                  Navana Welding Electrode Limited<br />
-                  01-10-2024 To Continuing
-                </p>
-              </div>
-                    <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Programmer, IT</h3>
-                <p>
-                  STAR Porcelain Limited <br />
-                  02-04-2022 To Continuing
-                </p>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <a href="https://apex.oracle.com/pls/apex/mamunddd/r/onlinebloodbank/home" target="_blank">
+            <div class="card shadow">
+              <img src="./assets/images/BloodBank.png" class="card-img-top" alt="Online Blood Bank Management System" />
+              <div class="card-footer">
+                <p class="card-text text-dark">Online Blood Bank Management System</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Junior Software Developer</h3>
-                <p>SYP Solutions LTD <br />01-07-2021 To 31-03-2022</p>
-              </div>
-            </div>
-          </div>
-          <!-- experiences end -->
-
-          <!-- education start -->
-          <div class="row mt-3 d-none">
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>MSc in Computer Science</h3>
-                <p>Cumilla University(Running)</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Diploma in Computer Science</h3>
-                <p>IsDB-BISEW</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Masters of Arts</h3>
-                <p>Jagannath University</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Bachelor of Arts</h3>
-                <p>Jagannath University</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Higher Secondary Education</h3>
-                <p>Gov. Madrasah-E-Alia</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="shadow p-5">
-                <h3>Secondary School Education</h3>
-                <p>Alamadanga Sidiqua Alim Madrasah</p>
-              </div>
-            </div>
-          </div>
-          <!-- education end -->
+          </a>
         </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <a href="http://orasoft.oracleapexservices.com/apex/f?p=135:LOGIN_DESKTOP" target="_blank">
+            <div class="card shadow">
+              <img src="./assets/images/POS.png" class="card-img-top" alt="Ora POS" />
+              <div class="card-footer">
+                <p class="card-text text-dark">Ora POS (Point Of Sales)</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Additional Portfolio Cards... -->
+        <p class="mt-4">
+          Description: I built these projects with <strong>Frontend: Oracle Application Express (APEX)</strong> & <strong>Backend: Oracle Database 19c</strong>. I followed all standard procedures required for developing professional software. For login credentials, please contact me at <a href="mailto:mamunddd44@gmail.com">mamunddd44@gmail.com</a>.
+        </p>
       </div>
-    </section>
-    <!-- my_resume section end -->
+    </div>
+  </section>
 
-    <!-- contact with me section start -->
-    <section id="contact" class="py-md-5">
-      <div class="container">
-        <h2 class="text-center pb-5 fw-bold display-5">Contact With Me</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-5 shadow p-3">
-            <img
-              class="img-fluid rounded-start"
-              src="./assets/images/contact-image.png"
-              alt="Photo by Diego PH"
-            />
-            <h4 class="mt-3">Softwere Developrer</h4>
-            <p class="txt_con">
-              I am available for Remote work.<br />
-              Connect with me via and call in to my account.<br />
-            </p>
-            <p>FIND WITH ME</p>
+  <!-- Resume Section -->
+  <section id="my_resume" class="py-md-5">
+    <div class="container">
+      <h2 class="text-center pb-5 fw-bold display-5">My Resume</h2>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a class="btn btn-outline-secondary px-3 fs-4" href="#">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a class="btn btn-outline-secondary px-3 fs-4" href="#">
-                <i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="btn btn-outline-secondary px-3 fs-4" href="#">
-                <i class="fa-solid fa-envelope"></i
-              ></a>
-              <a class="btn btn-outline-secondary px-3 fs-4" href="#">
-                <i class="fa-brands fa-skype"></i
-              ></a>
+      <div class="row">
+        <div class="col-md-4"><h2 class="text-center shadow py-3 fw-bold resume_btn" role="button">Professional Skills</h2></div>
+        <div class="col-md-4"><h2 class="text-center shadow py-3 fw-bold resume_btn" role="button">Experiences</h2></div>
+        <div class="col-md-4"><h2 class="text-center shadow py-3 fw-bold resume_btn" role="button">Education</h2></div>
+      </div>
+
+      <div id="resume_show">
+        <!-- Skills Section -->
+        <div class="row mt-3">
+          <!-- Frontend Skills -->
+          <div class="col-md-6">
+            <div class="shadow p-5">
+              <h3>Frontend Skills</h3>
+              <div class="mb-3"><div class="labels"><span>HTML5</span><span>95%</span></div><div class="progress"><div class="progress-bar" style="width:95%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>CSS</span><span>80%</span></div><div class="progress"><div class="progress-bar" style="width:80%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>Bootstrap5</span><span>85%</span></div><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>JavaScript</span><span>75%</span></div><div class="progress"><div class="progress-bar" style="width:75%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>WordPress</span><span>95%</span></div><div class="progress"><div class="progress-bar" style="width:95%"></div></div></div>
             </div>
           </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="shadow ms-3 p-3">
-              <form>
-                <!-- <div class="offset-lg-1 p-5 overflow-hidden shadow-lg col mt-3"> -->
-                <div class="row">
-                  <div class="col mt-4">
-                    <label for="first_name">First name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="First name"
-                      id="first_name"
-                    />
-                  </div>
 
-                  <div class="col mt-4">
-                    <label for="last_name">Last name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Last name"
-                      id="last_name"
-                    />
-                  </div>
-
-                  <div class="form-group mt-4">
-                    <label for="inputEmail">Email</label>
-                    <input type="text" class="form-control" id="inputEmail" />
-                  </div>
-
-                  <div class="form-group mt-4">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" />
-                  </div>
-
-                  <div class="form-group mt-4">
-                    <label for="inputMess">Messege</label>
-                    <textarea
-                      class="form-control"
-                      id="inputMess"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-lg btn-block mt-4"
-                >
-                  Send
-                </button>
-              </form>
+          <!-- Backend Skills -->
+          <div class="col-md-6">
+            <div class="shadow p-5">
+              <h3>Backend Skills</h3>
+              <div class="mb-3"><div class="labels"><span>SQL</span><span>95%</span></div><div class="progress"><div class="progress-bar" style="width:95%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>MySQL</span><span>90%</span></div><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>PL/SQL</span><span>85%</span></div><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>SQL Server</span><span>85%</span></div><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+              <div class="mb-3"><div class="labels"><span>C</span><span>60%</span></div><div class="progress"><div class="progress-bar" style="width:60%"></div></div></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- contact with me section end -->
+    </div>
+  </section>
 
-    <!-- footer area start -->
-    <footer class="pt-md-5 mt-md-5 pb-md-4 border-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-lg-0 mb-md-5">
-            <a href="#"
-              ><img
-                src="./assets/images/logo-for-white-mode.svg"
-                alt="Logo"
-                width="150"
-                class="mb-4 logo_wite_mode"
-            /></a>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a
-                class="btn btn-outline-secondary px-3 fs-5"
-                href="https://www.facebook.com/Mamunjnu6"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a
-                class="btn btn-outline-secondary px-3 fs-5"
-                href="https://www.linkedin.com/in/mamunjnu6/"
-              >
-                <i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a
-                class="btn btn-outline-secondary px-3 fs-5"
-                href="mamunddd44@gmail.com"
-              >
-                <i class="fa-solid fa-envelope"></i
-              ></a>
-              <a
-                class="btn btn-outline-secondary px-3 fs-5"
-                href="https://join.skype.com/invite/fB44iFLOaqLF"
-              >
-                <i class="fa-brands fa-skype"></i
-              ></a>
-            </div>
+  <!-- Contact Section -->
+  <section id="contact" class="py-md-5">
+    <div class="container">
+      <h2 class="text-center pb-5 fw-bold display-5">Contact Me</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 shadow p-3 text-center">
+          <img class="img-fluid rounded-start" src="./assets/images/contact-image.png" alt="Contact Image" />
+          <h4 class="mt-3">Software Developer</h4>
+          <p>I am available for Remote work. Connect with me via email or call.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a class="btn btn-outline-secondary px-3 fs-4" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="btn btn-outline-secondary px-3 fs-4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="btn btn-outline-secondary px-3 fs-4" href="mailto:mamunddd44@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a class="btn btn-outline-secondary px-3 fs-4" href="#"><i class="fa-brands fa-skype"></i></a>
           </div>
-          <div class="col-lg-3 col-md-6 mb-lg-0 mb-md-5">
-            <h5 class="mb-3 fw-bold">Quick Links</h5>
-            <div>
-              <a href="#" class="d-block my-2 text-secondary">Get Started</a>
-              <a href="#" class="d-block my-2 text-secondary">About</a>
-              <a href="#portfolio" class="d-block my-2 text-secondary"
-                >Portfolio</a
-              >
-              <a href="#contact" class="d-block my-2 text-secondary">Contact</a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="mb-3 fw-bold">RESOURCES</h5>
-            <a href="#" class="d-block my-2 text-secondary">System Status</a>
-            <a href="#" class="d-block my-2 text-secondary">Terms Of Service</a>
-            <a href="#" class="d-block my-2 text-secondary">Pricing</a>
-            <a href="#" class="d-block my-2 text-secondary">Services</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="mb-3 fw-bold">DEVELOPERS</h5>
-            <a href="#" class="d-block my-2 text-secondary">Documentation</a>
-            <a href="#" class="d-block my-2 text-secondary">Support</a>
-            <a href="#" class="d-block my-2 text-secondary">Authentication</a>
-            <a href="#" class="d-block my-2 text-secondary">Open Source</a>
+        </div>
+
+        <div class="col-lg-8 col-md-7">
+          <div class="shadow ms-3 p-3">
+            <form>
+              <div class="row">
+                <div class="col mt-4">
+                  <label for="first_name">First Name</label>
+                  <input type="text" class="form-control" id="first_name" placeholder="First Name" />
+                </div>
+                <div class="col mt-4">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" class="form-control" id="last_name" placeholder="Last Name" />
+                </div>
+                <div class="form-group mt-4">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+                </div>
+                <div class="form-group mt-4">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Address" />
+                </div>
+                <div class="form-group mt-4">
+                  <label for="inputMess">Message</label>
+                  <textarea class="form-control" id="inputMess" rows="3" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Send</button>
+            </form>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="text-center mt-5">©2022. All rights reserved by Mamun.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-md-5 mt-md-5 pb-md-4 border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-lg-0 mb-md-5">
+          <a href="#"><img src="./assets/images/logo-for-white-mode.svg" alt="Logo" width="150" class="mb-4 logo_wite_mode" /></a>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a class="btn btn-outline-secondary px-3 fs-5" href="https://www.facebook.com/Mamunjnu6"><i class="fa-brands fa-facebook"></i></a>
+            <a class="btn btn-outline-secondary px-3 fs-5" href="https://www.linkedin.com/in/mamunjnu6/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="btn btn-outline-secondary px-3 fs-5" href="mailto:mamunddd44@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a class="btn btn-outline-secondary px-3 fs-5" href="https://join.skype.com/invite/fB44iFLOaqLF"><i class="fa-brands fa-skype"></i></a>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- footer area end -->
 
-    <!-- bootstrap5 script -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- switch for dark mode -->
-    <script src="./assets/js/switch.js"></script>
-    <!-- app (main) script file -->
-    <script src="./assets/js/app.js"></script>
-  </body>
+        <div class="col-lg-3 col-md-6 mb-lg-0 mb-md-5">
+          <h5 class="mb-3 fw-bold">Quick Links</h5>
+          <a href="#" class="d-block my-2 text-secondary">Get Started</a>
+          <a href="#" class="d-block my-2 text-secondary">About</a>
+          <a href="#portfolio" class="d-block my-2 text-secondary">Portfolio</a>
+          <a href="#contact" class="d-block my-2 text-secondary">Contact</a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 fw-bold">Resources</h5>
+          <a href="#" class="d-block my-2 text-secondary">System Status</a>
+          <a href="#" class="d-block my-2 text-secondary">Terms Of Service</a>
+          <a href="#" class="d-block my-2 text-secondary">Pricing</a>
+          <a href="#" class="d-block my-2 text-secondary">Services</a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 fw-bold">Developers</h5>
+          <a href="#" class="d-block my-2 text-secondary">Documentation</a>
+          <a href="#" class="d-block my-2 text-secondary">Support</a>
+          <a href="#" class="d-block my-2 text-secondary">Authentication</a>
+          <a href="#" class="d-block my-2 text-secondary">Open Source</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center mt-5">©2022. All rights reserved by Mamun.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/switch.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
 </html>
